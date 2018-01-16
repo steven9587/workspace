@@ -8,7 +8,7 @@ public class VendingMachine {
 		int sum = 0;
 		for (int i = 1; i > 0; i++) {
 			System.out.println("販賣機餘額" + sum);
-			System.out.print("請投幣或選擇飲料(a或b或c或d或e或f或g),或輸入0結束：");
+			System.out.println("請投幣或選擇飲料(a或b或c或d或e或f或g),或輸入0結束：");
 			Scanner scanner = new Scanner(System.in);
 			String line = scanner.nextLine();
 
@@ -37,14 +37,16 @@ public class VendingMachine {
 									System.out.println("DEEP!");
 								}
 							} else {
-								if (line.equals("c")) {
-									if (sum >= 10) {
-										sum = sum - 10;
-										System.out.println("DON!");
-									} else {
-										System.out.println("DEEP!");
-									}
+
+							}
+							if (line.equals("c")) {
+								if (sum >= 10) {
+									sum = sum - 10;
+									System.out.println("DON!");
+								} else {
+									System.out.println("DEEP!");
 								}
+							} else {
 								if (line.equals("d")) {
 									if (sum >= 18) {
 										sum = sum - 18;
@@ -68,7 +70,6 @@ public class VendingMachine {
 											} else {
 												System.out.println("DEEP!");
 											}
-
 										} else {
 											if (line.equals("g")) {
 												if (sum >= 15) {

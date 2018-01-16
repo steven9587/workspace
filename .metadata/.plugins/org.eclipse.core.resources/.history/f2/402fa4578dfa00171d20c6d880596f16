@@ -8,7 +8,7 @@ public class VendingMachine {
 		int sum = 0;
 		for (int i = 1; i > 0; i++) {
 			System.out.println("販賣機餘額" + sum);
-			System.out.print("請投幣或選擇飲料(a或b或c或d或e或f或g),或輸入0結束：");
+			System.out.println("請投幣或選擇飲料(a或b或c或d或e或f或g),或輸入0結束：");
 			Scanner scanner = new Scanner(System.in);
 			String line = scanner.nextLine();
 
