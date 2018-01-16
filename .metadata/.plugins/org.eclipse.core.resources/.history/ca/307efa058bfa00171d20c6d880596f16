@@ -1,0 +1,11 @@
+package exam;
+
+public class Employee {
+	int salary;
+	public Employee(int salaty) {
+		this.salary = salaty;
+		
+	}
+		
+	
+}

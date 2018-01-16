@@ -1,0 +1,10 @@
+package exam;
+
+public class Manager extends Employee {
+
+	public Manager(String name, int salaty) {
+		super(name, salaty);
+		
+	}
+
+}
