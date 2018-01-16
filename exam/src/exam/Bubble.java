@@ -1,0 +1,20 @@
+package exam;
+
+public class Bubble {
+
+	public static void main(String[] args) {
+		int n[] = { 30, 20, 60, 40, 50, 10 };
+		for(int i = 0;i<n.length;i++){
+			for(int f = i+1;f<n.length;f++){
+				if(n[f]<n[i]){
+					int tmp = n[f];
+					n[f] = n[i];
+					n[i] = tmp ;
+				}
+			}
+			System.out.print(n[i]+"\t");
+		}
+		
+		
+	}
+}
